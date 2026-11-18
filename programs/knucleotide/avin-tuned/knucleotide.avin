@@ -1,0 +1,51 @@
+// k-nucleotide, tuned: the idiomatic program's algorithm over an `Array[byte]` of 2-bit codes,
+// made once from the input, so counting reads a byte per position rather than decoding a
+// character of the string.
+
+import avin.io
+import avin.collections.mutable
+
+code(c: char) -> byte
+code('a' | 'A') = byte(0)
+code('c' | 'C') = byte(1)
+code('g' | 'G') = byte(2)
+code(_) = byte(3)
+
+decode(key: long, k: int) -> string =
+  (k - 1 .. 0 by -1).map(i -> "ACGT".charAt(int((key >> long(2 * i)) & 3))).mkString("")
+
+countAll(dna: Array[byte], k: int) -> mutable.Map[long, int]
+  val counts = mutable.Map[long, int]()
+  val mask = (long(1) << long(2 * k)) - 1
+  var key: long = 0
+  for i in 0 ..< dna.length
+    key = ((key << 2) & mask) | long(dna(i))
+    if i >= k - 1 then counts(key) = counts.getOrElse(key, 0) + 1
+  counts
+
+frequencies(dna: Array[byte], k: int)
+  val total = real(dna.length - k + 1)
+  val sorted = countAll(dna, k).toVector.sortBy((key, n) -> (-n, key))
+  for (key, n) in sorted
+    println(f"${decode(key, k)} ${100.0 * real(n) / total}%.3f")
+  println()
+
+count(dna: Array[byte], fragment: string)
+  val key = fragment.chars.foldLeft(long(0), (key, c) -> (key << 2) | long(code(c)))
+  println(s"${countAll(dna, fragment.byteLength).getOrElse(key, 0)}\t$fragment")
+
+main()
+  var line = io.readLine()
+  while line.exists(l -> !l.startsWith(">THREE")) do line = io.readLine()
+  val codes = Buffer[byte]()
+  line = io.readLine()
+  while line.exists(l -> !l.startsWith(">"))
+    for c in line.get.charIterator()
+      codes += code(c)
+    line = io.readLine()
+  val dna = codes.toArray()
+
+  frequencies(dna, 1)
+  frequencies(dna, 2)
+  for fragment in ["GGT", "GGTA", "GGTATT", "GGTATTTTAATT", "GGTATTTTAATTTATAGT"]
+    count(dna, fragment)

@@ -1,0 +1,51 @@
+// fannkuch-redux: every permutation in the counting order, flipping each until a 1 leads, keeping
+// the most flips and the alternating checksum. The permutations live in arrays.
+
+main(args: Vector[string])
+  val n = args(0).toInt()
+  val perm1 = Array.tabulate(n, i -> i)
+  val perm = Array.fill(n, 0)
+  val count = Array.fill(n, 0)
+  var maxFlips = 0
+  var checksum = 0
+  var permCount = 0
+  var r = n
+  var done = false
+  while !done
+    while r != 1
+      count(r - 1) = r
+      r--
+    perm1.copyTo(perm, 0)
+
+    var flips = 0
+    var k = perm(0)
+    while k != 0
+      var i = 0
+      var j = k
+      while i < j
+        val t = perm(i)
+        perm(i) = perm(j)
+        perm(j) = t
+        i++
+        j--
+      k = perm(0)
+      flips++
+    maxFlips = max(maxFlips, flips)
+    checksum += if permCount % 2 == 0 then flips else -flips
+
+    var more = true
+    while more
+      if r == n
+        more = false
+        done = true
+      else
+        val first = perm1(0)
+        for i in 0 ..< r
+          perm1(i) = perm1(i + 1)
+        perm1(r) = first
+        count(r) -= 1
+        if count(r) > 0 then more = false else r++
+    permCount++
+
+  println(checksum)
+  println(s"Pfannkuchen($n) = $maxFlips")

@@ -1,0 +1,39 @@
+// spectral-norm: ten rounds of A, then A transposed, applied to a vector, with A computed on the
+// fly. The vectors are arrays of reals.
+
+import avin.math
+
+a(i: int, j: int) -> real = 1.0 / real((i + j) * (i + j + 1) / 2 + i + 1)
+
+timesA(v: Array[real], out: Array[real])
+  for i in 0 ..< v.length
+    var sum = 0.0
+    for j in 0 ..< v.length
+      sum += a(i, j) * v(j)
+    out(i) = sum
+
+timesAt(v: Array[real], out: Array[real])
+  for i in 0 ..< v.length
+    var sum = 0.0
+    for j in 0 ..< v.length
+      sum += a(j, i) * v(j)
+    out(i) = sum
+
+timesAtA(v: Array[real], out: Array[real], tmp: Array[real])
+  timesA(v, tmp)
+  timesAt(tmp, out)
+
+main(args: Vector[string])
+  val n = args(0).toInt()
+  val u = Array.fill(n, 1.0)
+  val v = Array.fill(n, 0.0)
+  val tmp = Array.fill(n, 0.0)
+  for _ in 0 ..< 10
+    timesAtA(u, v, tmp)
+    timesAtA(v, u, tmp)
+  var vBv = 0.0
+  var vv = 0.0
+  for i in 0 ..< n
+    vBv += u(i) * v(i)
+    vv += v(i) * v(i)
+  println(f"${math.sqrt(vBv / vv)}%.9f")

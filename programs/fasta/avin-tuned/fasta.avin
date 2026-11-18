@@ -1,0 +1,93 @@
+// fasta, tuned: the idiomatic program's algorithm, writing bytes rather than characters. Each
+// block of lines is filled into an `Array[byte]` and goes out as one string, so the output costs
+// one conversion and one write per block instead of a string per line.
+
+val LineLength = 60
+val BlockLines = 1024
+
+val Alu = "GGCCGGGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGG"
+  + "GAGGCCGAGGCGGGCGGATCACCTGAGGTCAGGAGTTCGAGA"
+  + "CCAGCCTGGCCAACATGGTGAAACCCCGTCTCTACTAAAAAT"
+  + "ACAAAAATTAGCCGGGCGTGGTGGCGCGCGCCTGTAATCCCA"
+  + "GCTACTCGGGAGGCTGAGGCAGGAGAATCGCTTGAACCCGGG"
+  + "AGGCGGAGGTTGCAGTGAGCCGAGATCGCGCCACTGCACTCC"
+  + "AGCCTGGGCGACAGAGCGAGACTCCGTCTCAAAAA"
+
+val Iub = [
+  ('a', 0.27), ('c', 0.12), ('g', 0.12), ('t', 0.27),
+  ('B', 0.02), ('D', 0.02), ('H', 0.02), ('K', 0.02), ('M', 0.02), ('N', 0.02),
+  ('R', 0.02), ('S', 0.02), ('V', 0.02), ('W', 0.02), ('Y', 0.02)]
+
+val HomoSapiens = [
+  ('a', 0.3029549426680), ('c', 0.1979883004921), ('g', 0.1975473066391),
+  ('t', 0.3015094502008)]
+
+class Random
+  private var seed = 42
+
+  next() -> real
+    seed = (seed * 3877 + 29573) % 139968
+    real(seed) / 139968.0
+
+// Lines of up to 60 bytes, gathered into a block and written a block at a time.
+class Output
+  private val block = Array.fill(BlockLines * (LineLength + 1), byte(0))
+  private var used = 0
+
+  put(b: byte)
+    block(used) = b
+    used++
+
+  endLine()
+    put(byte(int('\n')))
+    if used + LineLength + 1 > block.length then flush()
+
+  flush()
+    print(string.fromUtf8Lossy(block.slice(0, used)))
+    used = 0
+
+repeatFasta(out: Output, sequence: string, n: int)
+  val bytes = (sequence + sequence).utf8
+  val length = sequence.byteLength
+  var start = 0
+  var left = n
+  while left > 0
+    val count = min(left, LineLength)
+    for i in start ..< start + count
+      out.put(bytes(i))
+    out.endLine()
+    start = (start + count) % length
+    left -= count
+
+randomFasta(out: Output, table: Vector[(char, real)], n: int, random: Random)
+  val symbols = Array.tabulate(table.length, i -> byte(int(table(i).0)))
+  val cumulative = Array.tabulate(table.length, i -> 0.0)
+  var sum = 0.0
+  for i in 0 ..< table.length
+    sum += table(i).1
+    cumulative(i) = sum
+  val last = table.length - 1
+  var left = n
+  while left > 0
+    val count = min(left, LineLength)
+    for _ in 0 ..< count
+      val v = random.next()
+      var i = 0
+      while i < last && v > cumulative(i) do i++
+      out.put(symbols(i))
+    out.endLine()
+    left -= count
+
+main(args: Vector[string])
+  val n = args(0).toInt()
+  val random = Random()
+  val out = Output()
+  println(">ONE Homo sapiens alu")
+  repeatFasta(out, Alu, n * 2)
+  out.flush()
+  println(">TWO IUB ambiguity codes")
+  randomFasta(out, Iub, n * 3, random)
+  out.flush()
+  println(">THREE Homo sapiens frequency")
+  randomFasta(out, HomoSapiens, n * 5, random)
+  out.flush()

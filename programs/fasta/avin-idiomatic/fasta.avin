@@ -1,0 +1,64 @@
+// fasta: the ALU sequence repeated, then two random sequences from the 139968-state generator,
+// each symbol chosen by scanning the cumulative probabilities; every line is 60 symbols.
+
+val LineLength = 60
+
+val Alu = "GGCCGGGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGG"
+  + "GAGGCCGAGGCGGGCGGATCACCTGAGGTCAGGAGTTCGAGA"
+  + "CCAGCCTGGCCAACATGGTGAAACCCCGTCTCTACTAAAAAT"
+  + "ACAAAAATTAGCCGGGCGTGGTGGCGCGCGCCTGTAATCCCA"
+  + "GCTACTCGGGAGGCTGAGGCAGGAGAATCGCTTGAACCCGGG"
+  + "AGGCGGAGGTTGCAGTGAGCCGAGATCGCGCCACTGCACTCC"
+  + "AGCCTGGGCGACAGAGCGAGACTCCGTCTCAAAAA"
+
+val Iub = [
+  ('a', 0.27), ('c', 0.12), ('g', 0.12), ('t', 0.27),
+  ('B', 0.02), ('D', 0.02), ('H', 0.02), ('K', 0.02), ('M', 0.02), ('N', 0.02),
+  ('R', 0.02), ('S', 0.02), ('V', 0.02), ('W', 0.02), ('Y', 0.02)]
+
+val HomoSapiens = [
+  ('a', 0.3029549426680), ('c', 0.1979883004921), ('g', 0.1975473066391),
+  ('t', 0.3015094502008)]
+
+// The generator: each call advances the seed and answers a real in [0, 1).
+class Random
+  private var seed = 42
+
+  next() -> real
+    seed = (seed * 3877 + 29573) % 139968
+    real(seed) / 139968.0
+
+repeatFasta(header: string, sequence: string, n: int)
+  println(header)
+  val twice = sequence + sequence
+  var start = 0
+  var left = n
+  while left > 0
+    val length = min(left, LineLength)
+    println(twice.slice(start, start + length))
+    start = (start + length) % sequence.byteLength
+    left -= length
+
+randomFasta(header: string, table: Vector[(char, real)], n: int, random: Random)
+  println(header)
+  val symbols = table.map((c, _) -> c)
+  val cumulative = table.scanLeft(0.0, (sum, entry) -> sum + entry.1).drop(1)
+  val last = table.length - 1
+  var left = n
+  while left > 0
+    val length = min(left, LineLength)
+    val line = StringWriter()
+    for _ in 0 ..< length
+      val v = random.next()
+      var i = 0
+      while i < last && v > cumulative(i) do i++
+      line.writeChar(symbols(i))
+    println(line.text)
+    left -= length
+
+main(args: Vector[string])
+  val n = args(0).toInt()
+  val random = Random()
+  repeatFasta(">ONE Homo sapiens alu", Alu, n * 2)
+  randomFasta(">TWO IUB ambiguity codes", Iub, n * 3, random)
+  randomFasta(">THREE Homo sapiens frequency", HomoSapiens, n * 5, random)

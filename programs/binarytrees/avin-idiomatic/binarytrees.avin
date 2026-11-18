@@ -1,0 +1,29 @@
+// binary-trees: every node a separate heap allocation, built, walked and dropped for the
+// collector. A tree is a `data` type; the bottom node holds two `Leaf`s, as the reference
+// program's bottom node holds two null children.
+
+data Tree
+  Leaf
+  Node(left: Tree, right: Tree)
+
+make(depth: int) -> Tree
+make(0) = Node(Leaf, Leaf)
+make(depth) = Node(make(depth - 1), make(depth - 1))
+
+check(tree: Tree) -> int
+check(Leaf) = 0
+check(Node(left, right)) = 1 + check(left) + check(right)
+
+main(args: Vector[string])
+  val maxDepth = max(6, args(0).toInt())
+  val stretch = maxDepth + 1
+  println(s"stretch tree of depth $stretch\t check: ${check(make(stretch))}")
+
+  val longLived = make(maxDepth)
+  for depth in 4 .. maxDepth by 2
+    val iterations = 1 << (maxDepth - depth + 4)
+    var sum = 0
+    for _ in 0 ..< iterations
+      sum += check(make(depth))
+    println(s"$iterations\t trees of depth $depth\t check: $sum")
+  println(s"long lived tree of depth $maxDepth\t check: ${check(longLived)}")

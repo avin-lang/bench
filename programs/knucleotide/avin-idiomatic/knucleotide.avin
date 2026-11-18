@@ -1,0 +1,51 @@
+// k-nucleotide: the third sequence of a fasta file, every k-mer counted into a hash map keyed by
+// its 2k-bit code, then the frequencies of the 1- and 2-mers and the counts of five longer ones.
+
+import avin.io
+import avin.collections.mutable
+
+code(c: char) -> long
+code('a' | 'A') = 0
+code('c' | 'C') = 1
+code('g' | 'G') = 2
+code(_) = 3
+
+// The k-mer a code stands for, its first nucleotide in the highest bits.
+decode(key: long, k: int) -> string =
+  (k - 1 .. 0 by -1).map(i -> "ACGT".charAt(int((key >> long(2 * i)) & 3))).mkString("")
+
+// Every k-mer of `dna`, with the number of times it occurs.
+countAll(dna: string, k: int) -> mutable.Map[long, int]
+  val counts = mutable.Map[long, int]()
+  val mask = (long(1) << long(2 * k)) - 1
+  var key: long = 0
+  for i in 0 ..< dna.byteLength
+    key = ((key << 2) & mask) | code(dna.charAt(i))
+    if i >= k - 1 then counts(key) = counts.getOrElse(key, 0) + 1
+  counts
+
+frequencies(dna: string, k: int)
+  val total = real(dna.byteLength - k + 1)
+  val sorted = countAll(dna, k).toVector.sortBy((key, n) -> (-n, key))
+  for (key, n) in sorted
+    println(f"${decode(key, k)} ${100.0 * real(n) / total}%.3f")
+  println()
+
+count(dna: string, fragment: string)
+  val key = fragment.chars.foldLeft(long(0), (key, c) -> (key << 2) | code(c))
+  println(s"${countAll(dna, fragment.byteLength).getOrElse(key, 0)}\t$fragment")
+
+main()
+  var line = io.readLine()
+  while line.exists(l -> !l.startsWith(">THREE")) do line = io.readLine()
+  val sequence = StringWriter()
+  line = io.readLine()
+  while line.exists(l -> !l.startsWith(">"))
+    sequence.write(line.get)
+    line = io.readLine()
+  val dna = sequence.text
+
+  frequencies(dna, 1)
+  frequencies(dna, 2)
+  for fragment in ["GGT", "GGTA", "GGTATT", "GGTATTTTAATT", "GGTATTTTAATTTATAGT"]
+    count(dna, fragment)
