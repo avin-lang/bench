@@ -1,0 +1,3438 @@
+{
+  "schema_version": 2,
+  "metadata": {
+    "hyperfine_version": "2.0.0",
+    "start_time": "2026-11-18T20:04:56Z",
+    "platform": {
+      "os": "Darwin",
+      "architecture": "arm64"
+    }
+  },
+  "primary_metric": "time_wall_clock",
+  "results": [
+    {
+      "command": "/Users/ed/dev/avin-lang/bench/build/fannkuchredux/avin-idiomatic 11",
+      "name": "avin-idiomatic",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 3.558631458,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 3.549874,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 3.542005,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.007869,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 11026432.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 14499517492
+          },
+          "instructions": {
+            "value": 66599301338
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 3.568565667,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 3.562173,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 3.554133,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.00804,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 11026432.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 14540318507
+          },
+          "instructions": {
+            "value": 66600232050
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 3.530637084,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 3.521427,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 3.513887,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.00754,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 11010048.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 14379429161
+          },
+          "instructions": {
+            "value": 66599314196
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 3.584874209,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 3.578036,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 3.570157,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.007878999999999999,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 11026432.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 14603160057
+          },
+          "instructions": {
+            "value": 66599751896
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 3.588877667,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 3.582707,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 3.574569,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.008138,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 11026432.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 14621141414
+          },
+          "instructions": {
+            "value": 66600482870
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 14528713326.2,
+          "stddev": 96641225.77433977,
+          "median": 14540318507.0,
+          "min": 14379429161.0,
+          "max": 14621141414.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 66599816470.0,
+          "stddev": 533527.3297535938,
+          "median": 66599751896.0,
+          "min": 66599301338.0,
+          "max": 66600482870.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 11023155.2,
+          "stddev": 7327.147548671311,
+          "median": 11026432.0,
+          "min": 11010048.0,
+          "max": 11026432.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 3.5588433999999998,
+          "stddev": 0.02464422174263167,
+          "median": 3.562173,
+          "min": 3.521427,
+          "max": 3.582707
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.0078932,
+          "stddev": 0.00022749439553536256,
+          "median": 0.007878999999999999,
+          "min": 0.00754,
+          "max": 0.008138
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 3.5509502,
+          "stddev": 0.024446760996091062,
+          "median": 3.554133,
+          "min": 3.513887,
+          "max": 3.574569
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 3.5663172170000004,
+          "stddev": 0.02340157134679667,
+          "median": 3.568565667,
+          "min": 3.530637084,
+          "max": 3.588877667
+        }
+      }
+    },
+    {
+      "command": "/Users/ed/dev/avin-lang/bench/build/fannkuchredux/avin-tuned 11",
+      "name": "avin-tuned",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 3.532190875,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 3.526877,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 3.520394,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.006483,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 11059200.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 14396321964
+          },
+          "instructions": {
+            "value": 66598477311
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 3.680102375,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 3.6717169999999997,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 3.662686,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.009030999999999999,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 11042816.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 14984896641
+          },
+          "instructions": {
+            "value": 66602282733
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 3.575581375,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 3.569983,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 3.561633,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.00835,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 11042816.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 14567598030
+          },
+          "instructions": {
+            "value": 66599531149
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 3.5838674580000003,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 3.573178,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 3.564316,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.008862,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 11026432.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 14586171236
+          },
+          "instructions": {
+            "value": 66600784732
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 3.5377101250000003,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 3.531877,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 3.524438,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.007438999999999999,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 11042816.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 14414744045
+          },
+          "instructions": {
+            "value": 66599432453
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 14589946383.2,
+          "stddev": 237005106.37152135,
+          "median": 14567598030.0,
+          "min": 14396321964.0,
+          "max": 14984896641.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 66600101675.6,
+          "stddev": 1469310.8308886858,
+          "median": 66599531149.0,
+          "min": 66598477311.0,
+          "max": 66602282733.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 11042816.0,
+          "stddev": 11585.237502960395,
+          "median": 11042816.0,
+          "min": 11026432.0,
+          "max": 11059200.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 3.5747264000000003,
+          "stddev": 0.0582187899977317,
+          "median": 3.569983,
+          "min": 3.526877,
+          "max": 3.6717169999999997
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.008033,
+          "stddev": 0.0010652546643878165,
+          "median": 0.00835,
+          "min": 0.006483,
+          "max": 0.009030999999999999
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 3.5666933999999997,
+          "stddev": 0.05739118443454531,
+          "median": 3.561633,
+          "min": 3.520394,
+          "max": 3.662686
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 3.5818904416,
+          "stddev": 0.05939537876063933,
+          "median": 3.575581375,
+          "min": 3.532190875,
+          "max": 3.680102375
+        }
+      }
+    },
+    {
+      "command": "/Users/ed/dev/avin-lang/bench/build/fannkuchredux/scala-native 11",
+      "name": "scala-native",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 1.6592659580000002,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.656351,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.6522709999999998,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.004079999999999999,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2654208.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6749474264
+          },
+          "instructions": {
+            "value": 24207614654
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.6524578330000002,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6493,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.646879,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.002421,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2654208.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6737921983
+          },
+          "instructions": {
+            "value": 24206595091
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.6604572910000002,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6557780000000002,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.653026,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.0027519999999999997,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2654208.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6763616504
+          },
+          "instructions": {
+            "value": 24207477884
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.653208,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6504510000000001,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.647621,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.00283,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2654208.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6742550340
+          },
+          "instructions": {
+            "value": 24207502725
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.660834292,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.656837,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.654115,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.002722,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2654208.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6773301200
+          },
+          "instructions": {
+            "value": 24206923764
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 6753372858.2,
+          "stddev": 14774357.579477565,
+          "median": 6749474264.0,
+          "min": 6737921983.0,
+          "max": 6773301200.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 24207222823.6,
+          "stddev": 441705.93305648497,
+          "median": 24207477884.0,
+          "min": 24206595091.0,
+          "max": 24207614654.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 2654208.0,
+          "stddev": 0.0,
+          "median": 2654208.0,
+          "min": 2654208.0,
+          "max": 2654208.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6537434000000002,
+          "stddev": 0.0035739766787151466,
+          "median": 1.6557780000000002,
+          "min": 1.6493,
+          "max": 1.656837
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.002961,
+          "stddev": 0.0006445393704033911,
+          "median": 0.0027519999999999997,
+          "min": 0.002421,
+          "max": 0.004079999999999999
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6507824,
+          "stddev": 0.0033010178430296347,
+          "median": 1.6522709999999998,
+          "min": 1.646879,
+          "max": 1.654115
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6572446748,
+          "stddev": 0.004077390039131156,
+          "median": 1.6592659580000002,
+          "min": 1.6524578330000002,
+          "max": 1.660834292
+        }
+      }
+    },
+    {
+      "command": "env GC_INITIAL_HEAP_SIZE=256m /Users/ed/dev/avin-lang/bench/build/fannkuchredux/scala-native-tuned 11",
+      "name": "scala-native-tuned",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 1.582835875,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.579112,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.575552,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.00356,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2621440.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6459856588
+          },
+          "instructions": {
+            "value": 21266370205
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.581030417,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.572751,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.57005,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.002701,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2621440.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6429148942
+          },
+          "instructions": {
+            "value": 21266311498
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.595279542,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.587043,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.583985,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.003058,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2621440.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6471953559
+          },
+          "instructions": {
+            "value": 21267544205
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.5894892500000002,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.5837419999999998,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.5804209999999999,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.0033209999999999997,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2621440.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6454969040
+          },
+          "instructions": {
+            "value": 21267272143
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.603040375,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.592933,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.586679,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.006254,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2621440.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6478095737
+          },
+          "instructions": {
+            "value": 21273878849
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 6458804773.2,
+          "stddev": 18975769.681788713,
+          "median": 6459856588.0,
+          "min": 6429148942.0,
+          "max": 6478095737.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 21268275380.0,
+          "stddev": 3179091.477266107,
+          "median": 21267272143.0,
+          "min": 21266311498.0,
+          "max": 21273878849.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 2621440.0,
+          "stddev": 0.0,
+          "median": 2621440.0,
+          "min": 2621440.0,
+          "max": 2621440.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5831161999999999,
+          "stddev": 0.007675479379165797,
+          "median": 1.5837419999999998,
+          "min": 1.572751,
+          "max": 1.592933
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.0037787999999999997,
+          "stddev": 0.0014199713729508776,
+          "median": 0.0033209999999999997,
+          "min": 0.002701,
+          "max": 0.006254
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5793374,
+          "stddev": 0.006656923411006004,
+          "median": 1.5804209999999999,
+          "min": 1.57005,
+          "max": 1.586679
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5903350917999999,
+          "stddev": 0.00907472428052591,
+          "median": 1.5894892500000002,
+          "min": 1.581030417,
+          "max": 1.603040375
+        }
+      }
+    },
+    {
+      "command": "/Users/ed/dev/avin-lang/bench/build/fannkuchredux/kotlin-native 11",
+      "name": "kotlin-native",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 1.5849000000000002,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.5495640000000002,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.5439880000000001,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005575999999999999,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 6815744.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6417349296
+          },
+          "instructions": {
+            "value": 21297404275
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.603960833,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.579251,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.5586,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.020651,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 6815744.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6664310621
+          },
+          "instructions": {
+            "value": 21347177438
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.61465425,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.5857949999999998,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.5611169999999999,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.024678,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 6815744.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6689115998
+          },
+          "instructions": {
+            "value": 21357238359
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.6330662500000002,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.595375,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.56549,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.029885,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 6815744.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6706306695
+          },
+          "instructions": {
+            "value": 21375895119
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.617740583,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.586057,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.5579100000000001,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.028147,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 6815744.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6692479756
+          },
+          "instructions": {
+            "value": 21364732636
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 6633912473.2,
+          "stddev": 122006286.95232905,
+          "median": 6689115998.0,
+          "min": 6417349296.0,
+          "max": 6706306695.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 21348489565.4,
+          "stddev": 30425612.8683574,
+          "median": 21357238359.0,
+          "min": 21297404275.0,
+          "max": 21375895119.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 6815744.0,
+          "stddev": 0.0,
+          "median": 6815744.0,
+          "min": 6815744.0,
+          "max": 6815744.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5792084000000002,
+          "stddev": 0.017538798727392852,
+          "median": 1.5857949999999998,
+          "min": 1.5495640000000002,
+          "max": 1.595375
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.021787400000000002,
+          "stddev": 0.009727179719733772,
+          "median": 0.024678,
+          "min": 0.005575999999999999,
+          "max": 0.029885
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5574210000000002,
+          "stddev": 0.008075330148049616,
+          "median": 1.5586,
+          "min": 1.5439880000000001,
+          "max": 1.56549
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6108643832000002,
+          "stddev": 0.017863204526180107,
+          "median": 1.61465425,
+          "min": 1.5849000000000002,
+          "max": 1.6330662500000002
+        }
+      }
+    },
+    {
+      "command": "/Users/ed/dev/avin-lang/bench/build/fannkuchredux/kotlin-native-tuned 11",
+      "name": "kotlin-native-tuned",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 1.627644542,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.602426,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.578827,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.023599,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 6848512.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6561422585
+          },
+          "instructions": {
+            "value": 21350074515
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.571734584,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.566608,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.559589,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.007019,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 6832128.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6353756282
+          },
+          "instructions": {
+            "value": 21297206272
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.543066167,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.5398059999999998,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.5345909999999998,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005215,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 6848512.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6277072774
+          },
+          "instructions": {
+            "value": 21291986610
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.548763208,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.5448300000000001,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.539762,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005068,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 6848512.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6302126181
+          },
+          "instructions": {
+            "value": 21293083279
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.5470766249999999,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.543278,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.538525,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.004752999999999999,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 6832128.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6290009825
+          },
+          "instructions": {
+            "value": 21292046956
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 6356877529.4,
+          "stddev": 117989640.417641,
+          "median": 6302126181.0,
+          "min": 6277072774.0,
+          "max": 6561422585.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 21304879526.4,
+          "stddev": 25355075.609883327,
+          "median": 21293083279.0,
+          "min": 21291986610.0,
+          "max": 21350074515.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 6841958.4,
+          "stddev": 8973.886382164643,
+          "median": 6848512.0,
+          "min": 6832128.0,
+          "max": 6848512.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5593895999999998,
+          "stddev": 0.026264615070470756,
+          "median": 1.5448300000000001,
+          "min": 1.5398059999999998,
+          "max": 1.602426
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.009130799999999998,
+          "stddev": 0.008136238025033436,
+          "median": 0.005215,
+          "min": 0.004752999999999999,
+          "max": 0.023599
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5502588,
+          "stddev": 0.018685151275812585,
+          "median": 1.539762,
+          "min": 1.5345909999999998,
+          "max": 1.578827
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5676570252,
+          "stddev": 0.035356640696584264,
+          "median": 1.548763208,
+          "min": 1.543066167,
+          "max": 1.627644542
+        }
+      }
+    },
+    {
+      "command": "/Users/ed/dev/avin-lang/bench/build/fannkuchredux/swift 11",
+      "name": "swift",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 1.6671166670000002,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6637159999999998,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.6592639999999999,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.004452,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2326528.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6784197976
+          },
+          "instructions": {
+            "value": 21651794954
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.6768092079999999,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6723169999999998,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.6671719999999999,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005144999999999999,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2310144.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6824688894
+          },
+          "instructions": {
+            "value": 21652464801
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.6746007500000002,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6690099999999999,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.664321,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.004689,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2326528.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6813157149
+          },
+          "instructions": {
+            "value": 21652073684
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.6734215840000002,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.669564,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.664939,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.004625,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2326528.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6812303539
+          },
+          "instructions": {
+            "value": 21652589054
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.675731459,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.670266,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.665444,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.004822,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2326528.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6817011566
+          },
+          "instructions": {
+            "value": 21652591151
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 6810271824.8,
+          "stddev": 15375097.929244343,
+          "median": 6813157149.0,
+          "min": 6784197976.0,
+          "max": 6824688894.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 21652302728.8,
+          "stddev": 354165.79858266946,
+          "median": 21652464801.0,
+          "min": 21651794954.0,
+          "max": 21652591151.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 2323251.2,
+          "stddev": 7327.147548671312,
+          "median": 2326528.0,
+          "min": 2310144.0,
+          "max": 2326528.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6689745999999999,
+          "stddev": 0.003195343142762668,
+          "median": 1.669564,
+          "min": 1.6637159999999998,
+          "max": 1.6723169999999998
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.0047466,
+          "stddev": 0.0002594711930060828,
+          "median": 0.004689,
+          "min": 0.004452,
+          "max": 0.005144999999999999
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.664228,
+          "stddev": 0.0029707430888584294,
+          "median": 1.664939,
+          "min": 1.6592639999999999,
+          "max": 1.6671719999999999
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6735359335999997,
+          "stddev": 0.003804226286590452,
+          "median": 1.6746007500000002,
+          "min": 1.6671166670000002,
+          "max": 1.6768092079999999
+        }
+      }
+    },
+    {
+      "command": "/Users/ed/dev/avin-lang/bench/build/fannkuchredux/swift-tuned 11",
+      "name": "swift-tuned",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 1.610813542,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6074320000000002,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.603031,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.0044009999999999995,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2310144.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6559158609
+          },
+          "instructions": {
+            "value": 12887240054
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.6050416250000001,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6005619999999998,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.5960809999999999,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.004481,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2310144.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6531452283
+          },
+          "instructions": {
+            "value": 12887118123
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.600536208,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.5967609999999999,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.592005,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.004756,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2310144.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6522403154
+          },
+          "instructions": {
+            "value": 12886935339
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.6086532500000001,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.603233,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.5989119999999999,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.004321,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2310144.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6544746560
+          },
+          "instructions": {
+            "value": 12887563894
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.608158084,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6039510000000001,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.59972,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.0042309999999999995,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2310144.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6541571546
+          },
+          "instructions": {
+            "value": 12886790121
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 6539866430.4,
+          "stddev": 13916493.257536013,
+          "median": 6541571546.0,
+          "min": 6522403154.0,
+          "max": 6559158609.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 12887129506.2,
+          "stddev": 297458.5557900462,
+          "median": 12887118123.0,
+          "min": 12886790121.0,
+          "max": 12887563894.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 2310144.0,
+          "stddev": 0.0,
+          "median": 2310144.0,
+          "min": 2310144.0,
+          "max": 2310144.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6023878,
+          "stddev": 0.003987365508703844,
+          "median": 1.603233,
+          "min": 1.5967609999999999,
+          "max": 1.6074320000000002
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.004437999999999999,
+          "stddev": 0.000200549245822566,
+          "median": 0.0044009999999999995,
+          "min": 0.0042309999999999995,
+          "max": 0.004756
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5979497999999999,
+          "stddev": 0.004144607665388929,
+          "median": 1.5989119999999999,
+          "min": 1.592005,
+          "max": 1.603031
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6066405417999998,
+          "stddev": 0.0039870818078976186,
+          "median": 1.608158084,
+          "min": 1.600536208,
+          "max": 1.610813542
+        }
+      }
+    },
+    {
+      "command": "/Users/ed/dev/avin-lang/bench/build/fannkuchredux/ocaml 11",
+      "name": "ocaml",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 2.151605667,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 2.147472,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 2.14223,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005242,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2785280.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 8758289702
+          },
+          "instructions": {
+            "value": 44155892582
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 2.167047292,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 2.164084,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 2.159021,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005063,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2785280.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 8833323683
+          },
+          "instructions": {
+            "value": 44155493701
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 2.1481535,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 2.144367,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 2.139031,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005336,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2785280.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 8749987518
+          },
+          "instructions": {
+            "value": 44157195041
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 2.165014167,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 2.160115,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 2.15503,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005085,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2785280.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 8812359816
+          },
+          "instructions": {
+            "value": 44156744496
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 2.156314417,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 2.151917,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 2.14568,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.0062369999999999995,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2785280.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 8786454432
+          },
+          "instructions": {
+            "value": 44156448702
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 8788083030.2,
+          "stddev": 35276202.25328804,
+          "median": 8786454432.0,
+          "min": 8749987518.0,
+          "max": 8833323683.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 44156354904.4,
+          "stddev": 674874.5085068038,
+          "median": 44156448702.0,
+          "min": 44155493701.0,
+          "max": 44157195041.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 2785280.0,
+          "stddev": 0.0,
+          "median": 2785280.0,
+          "min": 2785280.0,
+          "max": 2785280.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 2.153591,
+          "stddev": 0.008336549615998154,
+          "median": 2.151917,
+          "min": 2.144367,
+          "max": 2.164084
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.005392599999999999,
+          "stddev": 0.0004853218519704216,
+          "median": 0.005242,
+          "min": 0.005063,
+          "max": 0.0062369999999999995
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 2.1481984,
+          "stddev": 0.008511826907309592,
+          "median": 2.14568,
+          "min": 2.139031,
+          "max": 2.159021
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 2.1576270086,
+          "stddev": 0.008231625980472492,
+          "median": 2.156314417,
+          "min": 2.1481535,
+          "max": 2.167047292
+        }
+      }
+    },
+    {
+      "command": "env OCAMLRUNPARAM=s=4M,o=200 /Users/ed/dev/avin-lang/bench/build/fannkuchredux/ocaml-tuned 11",
+      "name": "ocaml-tuned",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 2.148014208,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 2.144364,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 2.13871,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005654,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2850816.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 8749155292
+          },
+          "instructions": {
+            "value": 36598568587
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 2.153183583,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 2.146601,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 2.140546,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.006055,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2850816.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 8755518858
+          },
+          "instructions": {
+            "value": 36599773949
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 2.160814583,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 2.154378,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 2.148803,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005575,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2850816.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 8793632083
+          },
+          "instructions": {
+            "value": 36599102917
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 2.153141333,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 2.145566,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 2.1398,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005765999999999999,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2850816.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 8757977403
+          },
+          "instructions": {
+            "value": 36598762025
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 2.146054167,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 2.141925,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 2.136413,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.0055119999999999995,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2850816.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 8745073545
+          },
+          "instructions": {
+            "value": 36598355067
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 8760271436.2,
+          "stddev": 19334728.480033014,
+          "median": 8755518858.0,
+          "min": 8745073545.0,
+          "max": 8793632083.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 36598912509.0,
+          "stddev": 554527.6007035178,
+          "median": 36598762025.0,
+          "min": 36598355067.0,
+          "max": 36599773949.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 2850816.0,
+          "stddev": 0.0,
+          "median": 2850816.0,
+          "min": 2850816.0,
+          "max": 2850816.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 2.1465668,
+          "stddev": 0.004701495793893627,
+          "median": 2.145566,
+          "min": 2.141925,
+          "max": 2.154378
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.0057124,
+          "stddev": 0.0002137154650464022,
+          "median": 0.005654,
+          "min": 0.0055119999999999995,
+          "max": 0.006055
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 2.1408544,
+          "stddev": 0.004709341705588967,
+          "median": 2.1398,
+          "min": 2.136413,
+          "max": 2.148803
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 2.1522415748,
+          "stddev": 0.005730359046557323,
+          "median": 2.153141333,
+          "min": 2.146054167,
+          "max": 2.160814583
+        }
+      }
+    },
+    {
+      "command": "/Users/ed/dev/avin-lang/bench/build/fannkuchredux/go 11",
+      "name": "go",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 1.666849,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.663703,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.657212,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.006490999999999999,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 4816896.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6777376947
+          },
+          "instructions": {
+            "value": 16951903774
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.6704945420000001,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6676069999999998,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.6619769999999998,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.00563,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 4866048.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6801350199
+          },
+          "instructions": {
+            "value": 16952678955
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.667440042,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.665969,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.660185,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005784,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 4833280.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6795083262
+          },
+          "instructions": {
+            "value": 16951833397
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.663358583,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.661949,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.656459,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.00549,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 4947968.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6781267446
+          },
+          "instructions": {
+            "value": 16952312232
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.655905208,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.653938,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.648207,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005731,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 4849664.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6751086035
+          },
+          "instructions": {
+            "value": 16951801357
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 6781232777.8,
+          "stddev": 19495135.82156028,
+          "median": 6781267446.0,
+          "min": 6751086035.0,
+          "max": 6801350199.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 16952105943.0,
+          "stddev": 380402.47164615005,
+          "median": 16951903774.0,
+          "min": 16951801357.0,
+          "max": 16952678955.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 4862771.2,
+          "stddev": 51027.67801105592,
+          "median": 4849664.0,
+          "min": 4816896.0,
+          "max": 4947968.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6626331999999997,
+          "stddev": 0.0053170798564625725,
+          "median": 1.663703,
+          "min": 1.653938,
+          "max": 1.6676069999999998
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.0058252,
+          "stddev": 0.0003886910083858383,
+          "median": 0.005731,
+          "min": 0.00549,
+          "max": 0.006490999999999999
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6568079999999998,
+          "stddev": 0.005300587420277082,
+          "median": 1.657212,
+          "min": 1.648207,
+          "max": 1.6619769999999998
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6648094749999998,
+          "stddev": 0.005585485434690442,
+          "median": 1.666849,
+          "min": 1.655905208,
+          "max": 1.6704945420000001
+        }
+      }
+    },
+    {
+      "command": "env GOGC=400 /Users/ed/dev/avin-lang/bench/build/fannkuchredux/go-tuned 11",
+      "name": "go-tuned",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 1.635392667,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6285759999999998,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.6216659999999998,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.0069099999999999995,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 5013504.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6637379490
+          },
+          "instructions": {
+            "value": 13689542808
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.629066292,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.624928,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.6190449999999998,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005882999999999999,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 4849664.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6624410289
+          },
+          "instructions": {
+            "value": 13688418489
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.629277,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.626177,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.620069,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.006108,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 4849664.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6632795781
+          },
+          "instructions": {
+            "value": 13688120349
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.627333375,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.624821,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.618189,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.006632,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 4849664.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6626058440
+          },
+          "instructions": {
+            "value": 13687541743
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.6296940420000001,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.625699,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.619491,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.006208,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 5029888.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6633312159
+          },
+          "instructions": {
+            "value": 13688469813
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 6630791231.8,
+          "stddev": 5405880.75136251,
+          "median": 6632795781.0,
+          "min": 6624410289.0,
+          "max": 6637379490.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 13688418640.4,
+          "stddev": 728748.6295429996,
+          "median": 13688418489.0,
+          "min": 13687541743.0,
+          "max": 13689542808.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 4918476.8,
+          "stddev": 94403.69240236316,
+          "median": 4849664.0,
+          "min": 4849664.0,
+          "max": 5029888.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6260401999999998,
+          "stddev": 0.0015238808024250925,
+          "median": 1.625699,
+          "min": 1.624821,
+          "max": 1.6285759999999998
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.0063482,
+          "stddev": 0.0004153085599888353,
+          "median": 0.006208,
+          "min": 0.005882999999999999,
+          "max": 0.0069099999999999995
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.619692,
+          "stddev": 0.0012996945795069712,
+          "median": 1.619491,
+          "min": 1.618189,
+          "max": 1.6216659999999998
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6301526752000002,
+          "stddev": 0.003064447242451186,
+          "median": 1.629277,
+          "min": 1.627333375,
+          "max": 1.635392667
+        }
+      }
+    },
+    {
+      "command": "/Users/ed/dev/avin-lang/bench/build/fannkuchredux/crystal 11",
+      "name": "crystal",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 1.685186042,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.683161,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.6775769999999999,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.0055839999999999996,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 3653632.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6856164452
+          },
+          "instructions": {
+            "value": 21522770422
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.6841419590000002,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6789689999999997,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.6736369999999998,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005332,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 3670016.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6844695996
+          },
+          "instructions": {
+            "value": 21522100766
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.684614958,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.683414,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.678217,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005196999999999999,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 3653632.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6865604730
+          },
+          "instructions": {
+            "value": 21521776210
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.6918742500000001,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.687831,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.682669,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005162,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 3653632.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6887332235
+          },
+          "instructions": {
+            "value": 21521341941
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.6758315000000001,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6744119999999998,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.6689319999999999,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.00548,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 3653632.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6825904562
+          },
+          "instructions": {
+            "value": 21521859094
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 6855940395.0,
+          "stddev": 22953675.98006997,
+          "median": 6856164452.0,
+          "min": 6825904562.0,
+          "max": 6887332235.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 21521969686.6,
+          "stddev": 524901.7637042193,
+          "median": 21521859094.0,
+          "min": 21521341941.0,
+          "max": 21522770422.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 3656908.8,
+          "stddev": 7327.147548671312,
+          "median": 3653632.0,
+          "min": 3653632.0,
+          "max": 3670016.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6815573999999998,
+          "stddev": 0.005077723633676933,
+          "median": 1.683161,
+          "min": 1.6744119999999998,
+          "max": 1.687831
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.005351,
+          "stddev": 0.00018078163623554242,
+          "median": 0.005332,
+          "min": 0.005162,
+          "max": 0.0055839999999999996
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6762063999999999,
+          "stddev": 0.0051769915781272645,
+          "median": 1.6775769999999999,
+          "min": 1.6689319999999999,
+          "max": 1.682669
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6843297417999998,
+          "stddev": 0.005700648611438272,
+          "median": 1.684614958,
+          "min": 1.6758315000000001,
+          "max": 1.6918742500000001
+        }
+      }
+    },
+    {
+      "command": "env GC_INITIAL_HEAP_SIZE=268435456 /Users/ed/dev/avin-lang/bench/build/fannkuchredux/crystal-tuned 11",
+      "name": "crystal-tuned",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 1.591504208,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.585542,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.579248,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.006294,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 3686400.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6463638966
+          },
+          "instructions": {
+            "value": 21532183406
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.5946438330000001,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.590292,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.584174,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.006117999999999999,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 3686400.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6483390830
+          },
+          "instructions": {
+            "value": 21530596255
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.609462208,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.605445,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.599876,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005569,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 3686400.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6554300868
+          },
+          "instructions": {
+            "value": 21529853375
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.588968583,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.5823699999999998,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.5769009999999999,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005469,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 3686400.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6453446859
+          },
+          "instructions": {
+            "value": 21530123554
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.59434125,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.591437,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.585699,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.005738,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 3686400.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6488298041
+          },
+          "instructions": {
+            "value": 21530225316
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 6488615112.8,
+          "stddev": 39378376.31813754,
+          "median": 6483390830.0,
+          "min": 6453446859.0,
+          "max": 6554300868.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 21530596381.2,
+          "stddev": 926277.6161457752,
+          "median": 21530225316.0,
+          "min": 21529853375.0,
+          "max": 21532183406.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 3686400.0,
+          "stddev": 0.0,
+          "median": 3686400.0,
+          "min": 3686400.0,
+          "max": 3686400.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5910172,
+          "stddev": 0.008854595456597707,
+          "median": 1.590292,
+          "min": 1.5823699999999998,
+          "max": 1.605445
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.0058376,
+          "stddev": 0.0003552665196722032,
+          "median": 0.005738,
+          "min": 0.005469,
+          "max": 0.006294
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5851796,
+          "stddev": 0.008958017040617923,
+          "median": 1.584174,
+          "min": 1.5769009999999999,
+          "max": 1.599876
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5957840164000001,
+          "stddev": 0.007988138251298973,
+          "median": 1.59434125,
+          "min": 1.588968583,
+          "max": 1.609462208
+        }
+      }
+    },
+    {
+      "command": "/Users/ed/dev/avin-lang/bench/build/fannkuchredux/c 11",
+      "name": "c",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 1.61943825,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6141839999999998,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.6096599999999999,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.004523999999999999,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 1916928.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6583439273
+          },
+          "instructions": {
+            "value": 12879473740
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.620403083,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6163470000000002,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.6123910000000001,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.0039559999999999994,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 1916928.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6589680320
+          },
+          "instructions": {
+            "value": 12878756141
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.618322042,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.615234,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.61113,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.004104,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 1916928.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6594048944
+          },
+          "instructions": {
+            "value": 12878251165
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.605747917,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.6026960000000001,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.599048,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.0036479999999999998,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 1916928.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6544120927
+          },
+          "instructions": {
+            "value": 12877974590
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.6092324580000001,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.606587,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.602589,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.003998,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 1900544.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6556785452
+          },
+          "instructions": {
+            "value": 12878029496
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 6573614983.2,
+          "stddev": 21939068.702250596,
+          "median": 6583439273.0,
+          "min": 6544120927.0,
+          "max": 6594048944.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 12878497026.4,
+          "stddev": 627112.8541453284,
+          "median": 12878251165.0,
+          "min": 12877974590.0,
+          "max": 12879473740.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 1913651.2,
+          "stddev": 7327.147548671311,
+          "median": 1916928.0,
+          "min": 1900544.0,
+          "max": 1916928.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6110095999999998,
+          "stddev": 0.006022573063068636,
+          "median": 1.6141839999999998,
+          "min": 1.6026960000000001,
+          "max": 1.6163470000000002
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.004045999999999999,
+          "stddev": 0.0003164869665562864,
+          "median": 0.003998,
+          "min": 0.0036479999999999998,
+          "max": 0.004523999999999999
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.6069635999999998,
+          "stddev": 0.005828378445159501,
+          "median": 1.6096599999999999,
+          "min": 1.599048,
+          "max": 1.6123910000000001
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.61462875,
+          "stddev": 0.006672776404265781,
+          "median": 1.618322042,
+          "min": 1.605747917,
+          "max": 1.620403083
+        }
+      }
+    },
+    {
+      "command": "/Users/ed/dev/avin-lang/bench/build/fannkuchredux/rust 11",
+      "name": "rust",
+      "measurements": [
+        {
+          "time_wall_clock": {
+            "value": 1.5522720840000002,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.5474160000000001,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.543509,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.003907,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2048000.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6315103249
+          },
+          "instructions": {
+            "value": 11523406218
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.545488916,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.539051,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.534643,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.004408,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2048000.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6280571483
+          },
+          "instructions": {
+            "value": 11522390591
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.5480365420000002,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.544149,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.54036,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.003789,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2048000.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6292399912
+          },
+          "instructions": {
+            "value": 11522943884
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.568076,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.5640830000000001,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.554818,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.009264999999999999,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2031616.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6389247865
+          },
+          "instructions": {
+            "value": 11524155707
+          },
+          "exit_code": 0
+        },
+        {
+          "time_wall_clock": {
+            "value": 1.550440208,
+            "unit": "second"
+          },
+          "time_cpu": {
+            "value": 1.547522,
+            "unit": "second"
+          },
+          "time_user": {
+            "value": 1.535045,
+            "unit": "second"
+          },
+          "time_system": {
+            "value": 0.012477,
+            "unit": "second"
+          },
+          "memory_peak_resident": {
+            "value": 2048000.0,
+            "unit": "byte"
+          },
+          "cpu_cycles": {
+            "value": 6320192029
+          },
+          "instructions": {
+            "value": 11525994432
+          },
+          "exit_code": 0
+        }
+      ],
+      "summary": {
+        "cpu_cycles": {
+          "count": 5,
+          "mean": 6319502907.6,
+          "stddev": 42232745.4669579,
+          "median": 6315103249.0,
+          "min": 6280571483.0,
+          "max": 6389247865.0
+        },
+        "instructions": {
+          "count": 5,
+          "mean": 11523778166.4,
+          "stddev": 1397686.3328630999,
+          "median": 11523406218.0,
+          "min": 11522390591.0,
+          "max": 11525994432.0
+        },
+        "memory_peak_resident": {
+          "unit": "byte",
+          "count": 5,
+          "mean": 2044723.2,
+          "stddev": 7327.147548671311,
+          "median": 2048000.0,
+          "min": 2031616.0,
+          "max": 2048000.0
+        },
+        "time_cpu": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5484442,
+          "stddev": 0.009396284675338495,
+          "median": 1.5474160000000001,
+          "min": 1.539051,
+          "max": 1.5640830000000001
+        },
+        "time_system": {
+          "unit": "second",
+          "count": 5,
+          "mean": 0.0067692,
+          "stddev": 0.003919727184384138,
+          "median": 0.004408,
+          "min": 0.003789,
+          "max": 0.012477
+        },
+        "time_user": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5416750000000001,
+          "stddev": 0.00823463954888132,
+          "median": 1.54036,
+          "min": 1.534643,
+          "max": 1.554818
+        },
+        "time_wall_clock": {
+          "unit": "second",
+          "count": 5,
+          "mean": 1.5528627499999998,
+          "stddev": 0.00887871447827103,
+          "median": 1.550440208,
+          "min": 1.545488916,
+          "max": 1.568076
+        }
+      }
+    }
+  ]
+}

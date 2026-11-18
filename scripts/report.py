@@ -72,13 +72,14 @@ for prog in programs:
         rows = {r["name"]: r for r in json.load(f)["results"]}
     entry = {}
     for lang in columns:
-        r = rows[lang]
-        wall = r["times"]
-        user, system = r.get("user"), r.get("system")
+        ms = rows[lang]["measurements"]
+        wall = [m["time_wall_clock"]["value"] for m in ms]
+        cpu = [m["time_cpu"]["value"] for m in ms]
         mean, sd, lo, hi = stats(wall)
         entry[lang] = {"mean": mean, "stddev": sd, "min": lo, "max": hi, "runs": len(wall),
-                       "times": wall, "cpu_mean": (user or 0) + (system or 0),
-                       "max_rss_bytes": max(r.get("memory_usage_byte") or [0])}
+                       "times": wall, "cpu_mean": sum(cpu) / len(cpu),
+                       "instructions_mean": sum(m.get("instructions", {}).get("value", 0) for m in ms) / len(ms),
+                       "max_rss_bytes": max(m["memory_peak_resident"]["value"] for m in ms)}
     best_plain = min(rivals_plain, key=lambda l: entry[l]["mean"])
     best_tuned = min(rivals_plain + rivals_tuned, key=lambda l: entry[l]["mean"])
     for lang in columns:
